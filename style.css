@@ -1,122 +1,182 @@
 :root {
-    --bg: #fcfcfc;
-    --headerbg: #ecf0fa;
-    --text1: #004ec2;
-    --text2: #1f1e1e;
-  }
+    --tulisanutama: #2d2d2d;
+    --biruutama: #0046be;
+    --lightg: #f6f8fb;
+    --darkg: #6c757d;
+}
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg);
-    color: var(--text2);
-    line-height: 1.6;
-  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  header {
-    background-color: var(--headerbg);
-    text-align: center;
-    padding: 60px 20px;
-  }
+header {
+  background-color: var(--lightg);
+  padding: 60px 20px;
+  text-align: center;
+}
 
-  logo.png {
-    size: 20px;
-  }
+header img{
+  width: 260px;
+  height: 120px;
+  animation: bounce 2s;
+}
 
-  header h1 {
-    font-size: 2.3rem;
-    margin-bottom: 10px;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
 
-  header p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: rgb(109, 109, 109);
-  }
+header h1 {
+  color: var(--tulisanutama);
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
 
-  .btn-primary {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background-color: var(--text1);
-    color: var(--bg);
-    border-radius: 7px;
-    border: none;
-    text-decoration: none;
-  }
+header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgb(109, 109, 109);
+}
 
-  .steps {
-    background-color: white;
-    padding: 40px 20px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 60px 20px;
-    gap: 90px;
-  }
+.btn-primary {
+  color: var(--lightg);
+  background-color: var(--biruutama);
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
-  .step i {
-    font-size: 2.5rem;
-    color: var(--text1);
-    margin-bottom: 15px;
-  }
+.btn-primary:hover {
+  background-color: #00a6ff;
+}
 
-  .step h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: var(--text2);
-  }
+.steps {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 90px;
+}
 
-  .step p {
-    font-size: 0.9rem;
-    color: rgb(109, 109, 109);
-    margin-bottom: 30px;
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.step i {
+  font-size: 2.5rem;
+  color: var(--biruutama);
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  color: var(--tulisanutama);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: rgb(109, 109, 109);
+  margin-bottom: 30px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .reviews {
-    border-top: 1px solid rgb(202, 202, 202);
+  border-top: 1px solid rgb(202, 202, 202);
 }
 
 .reviews h2 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 2rem;
+  color: var(--tulisanutama);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
 }
+
 .review-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
   }
 
 .review {
-    background-color: var(--headerbg);
-    padding: 30px 20px;
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    text-align: center;
+  background-color: var(--lightg);
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  max-width: 300px; 
+  margin: 0 auto;
 }
 
 .review p {
-    text-align: center;
-    color: black;
-    font-size: 1rem;
-    max-width: 300px;
-    margin: 0 auto 20px;
+  text-align: center;
+  color: var(--tulisanutama);
+  font-size: 1rem;
+  max-width: 300px;
+  margin: 0 auto 20px;
 }
 
 .review h4 {
-    text-align: center;
-    color: var(--text1);
+  text-align: center;
+  color: var(--biruutama);
+}
+
+.cta{
+  background-color: var(--lightg);
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.cta h2{
+  color: var(--tulisanutama);
+  font-size: 2rem;
+}
+
+.cta p {
+  color: var(--darkg);
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: var(--biruutama);
+  color: var(--lightg);
+  text-align: center;
+  padding: 20px 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+      h1 {
+          font-size: 2.2rem;
+    }
+  }
+  section {
+      p {
+          font-size: 1rem;
+      }
+  }
 }
